@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -35,4 +35,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.login-btn{
+  border-radius: 10px;
+  background-color: #1B3D2F;
+  color: #FFFFFF;
+}
+
+.register-btn{
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+.navbar{
+  background-color: #FFF9E8 !important;
 }
