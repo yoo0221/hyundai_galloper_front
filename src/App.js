@@ -12,6 +12,7 @@ import SelLog from './SelLog';
 import { useState } from 'react';
 import NeedLogin from './NeedLogin';
 import ConnMgr from './ConnMgr';
+import Accident from './Accident';
 
 function App() {
   const [mode, setMode] = useState('visit');
@@ -29,6 +30,7 @@ function App() {
         <Route path="/register" element={<Register/>}/>
         <Route path="/register_mgr" element={<RegisterMgr/>}/>
         <Route path="/conn-mgr" element={<ConnMgr/>}/>
+        <Route path="/accident" element={<Accident/>}/>
       </Routes>
     </div>
   );
