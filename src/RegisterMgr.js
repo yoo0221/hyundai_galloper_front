@@ -44,7 +44,7 @@ function RegisterMgr(){
                     <div className="container justify-content-center">
                         <div className="row">
                             <label for='name' className="col-4 align-middle mt-3">이름: </label>
-                            <input type='text' name='name' id='name' className="form-control my-2 col" placeholder="부모 본인의 이름을 입력하세요" onChange={(e)=>setName(e.target.value)}/>
+                            <input type='text' name='name' id='name' className="form-control my-2 col" placeholder="본인의 이름을 입력하세요" onChange={(e)=>setName(e.target.value)}/>
                         </div>
                     </div>
                     <div className="container justify-content-center">

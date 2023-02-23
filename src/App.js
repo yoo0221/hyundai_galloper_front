@@ -11,7 +11,6 @@ import SelReg from './SelReg';
 import SelLog from './SelLog';
 import { useState } from 'react';
 import NeedLogin from './NeedLogin';
-import GetOnOff from './GetOnOff';
 import ConnMgr from './ConnMgr';
 
 function App() {
@@ -29,7 +28,6 @@ function App() {
         <Route path="/login_mgr" element={<LoginMgr/>}/>
         <Route path="/register" element={<Register/>}/>
         <Route path="/register_mgr" element={<RegisterMgr/>}/>
-        <Route path="/manager" element={<GetOnOff/>}/>
         <Route path="/conn-mgr" element={<ConnMgr/>}/>
       </Routes>
     </div>

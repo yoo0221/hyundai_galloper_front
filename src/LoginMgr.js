@@ -14,7 +14,8 @@ function LoginMgr(){
             if(response.data.message != "아이디 비밀번호 불일치"){
                 sessionStorage.setItem("user-info", response.data.token);
                 sessionStorage.setItem("name", response.data.name);
-                window.location.replace('/manager');
+                sessionStorage.setItem("flag", response.data.flag);
+                window.location.replace('/');
             }
             else{
                 window.location.replace('/login_mgr');

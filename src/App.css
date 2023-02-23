@@ -50,4 +50,16 @@
 
 .navbar{
   background-color: #FFF9E8 !important;
+  border-bottom: 1px solid #1B3D2F !important;
+}
+
+.home-btn{
+  width:70px;
+  height:70px;
+}
+
+.logout-btn{
+  border-radius: 10px;
+  border-color: 1B3D2F;
+  background-color: #FFF9E8;
 }

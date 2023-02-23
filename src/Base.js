@@ -22,14 +22,14 @@ function Navbar(props) {
         return (
             <nav className="navbar bg-body-tertiary">
                 <div className="container-fluid">
-                    <Link to="/"><img src="" alt=""/>붕붕</Link>
+                    <Link to="/"><img className="home-btn" src={process.env.PUBLIC_URL + "/img/main_home.png"} alt=""/></Link>
                     <div className="d-flex">
                         {props.name + '님 환영합니다.'}
-                        <Link className="ms-2" to='' onClick={()=>{
+                        <Link className="ms-2 text-decoration-none text-secondary" to='' onClick={()=>{
                             sessionStorage.removeItem('name');
                             sessionStorage.removeItem('user-info');
                             window.location.replace('/');
-                        }}>로그아웃</Link>
+                        }}> <button className="logout-btn"> 로그아웃</button></Link>
                     </div>
                 </div>
             </nav>
