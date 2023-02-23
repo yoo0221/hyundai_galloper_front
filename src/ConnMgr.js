@@ -3,11 +3,12 @@ import { useState } from "react";
 function ConnMgr(){
     function connMgr(){
         console.log(userId)
-        let session_Id=sessionStorage.getItem("userID")
+        let session_Id=sessionStorage.getItem("userId")
+        console.log(session_Id);
         axios
-        .post("http://13.125.105.227:8080/member/regManager", {
-            userId:userId
-        }, {params: {session_Id}})
+        .put("http://13.125.105.227:8080/member/regManager/"+session_Id, {
+            userId: userId
+        })
         .then((response) => {
             console.log(response.data);
             if(response.data.message != "관리자 등록이 완료되었습니다."){

@@ -15,6 +15,7 @@ function LoginMgr(){
                 sessionStorage.setItem("user-info", response.data.token);
                 sessionStorage.setItem("name", response.data.name);
                 sessionStorage.setItem("flag", response.data.flag);
+                sessionStorage.setItem("userId", response.data.userId);
                 window.location.replace('/');
             }
             else{
