@@ -48,7 +48,7 @@ function LoginMgr(){
                         
                         <div className="row">
                     <label for='password' className="col-4 align-middle mt-3">비밀번호: </label>
-                    <input type='text' name='password' id='password' className="form-control my-2 col" placeholder="비밀번호를 입력하세요" onChange={(e)=>setPassword(e.target.value)}/>
+                    <input type='password' name='password' id='password' className="form-control my-2 col" placeholder="비밀번호를 입력하세요" onChange={(e)=>setPassword(e.target.value)}/>
                     </div></div>
                     
                     <div className="container px-5">
